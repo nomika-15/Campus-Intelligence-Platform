@@ -323,23 +323,5 @@ if st.button("🚀 Predict Placement", use_container_width=True):
             file_name="Campus_Intelligence_Report.pdf",
             mime="application/pdf"
         )
-        st.divider()
 
-st.subheader("📂 Saved Student Records")
-
-students = get_students()
-
-if students:
-
-    for student in students:
-
-        st.write(
-            f"ID: {student[0]} | "
-            f"Name: {student[1]} | "
-            f"Department: {student[3]} | "
-            f"Probability: {student[5]}%"
-        )
-
-else:
-    st.info("No student records found.")
     
