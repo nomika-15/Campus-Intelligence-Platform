@@ -54,7 +54,16 @@ st.set_page_config(
     layout="wide"
 )
 
-model = joblib.load("../models/placement_model.pkl")
+import os
+
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "models",
+    "placement_model.pkl"
+)
+
+model = joblib.load(MODEL_PATH)
 
 st.title("🎓 Campus Intelligence Platform")
 st.markdown("### AI-Powered Student Placement Prediction System")
