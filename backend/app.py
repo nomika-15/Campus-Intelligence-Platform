@@ -4,7 +4,7 @@ import numpy as np
 
 app = FastAPI()
 
-# Load model
+
 model = joblib.load("../models/placement_model.pkl")
 
 
